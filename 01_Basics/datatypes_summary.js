@@ -24,23 +24,49 @@
 
 //array , objects , Functions 
 
-const heros = ["shaktimAN","IRONMAN"];
-console.log(typeof heros);
+// const heros = ["shaktimAN","IRONMAN"];
+// console.log(typeof heros);
 
 
-let myObject={
-    name:"guru",
-    age : "21",
-}
-console.log(typeof myObject);
+// let myObject={
+//     name:"guru",
+//     age : "21",
+// }
+// console.log(typeof myObject);
 
 
 
-const myFunction = function(){
-    console.log("gurukiran c s");
-}
-console.log(typeof(myFunction));
-
- 
+// const myFunction = function(){
+//     console.log("gurukiran c s");
+// }
+// console.log(typeof(myFunction));
 
 // callbyvalue and callbyReference
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//stack(primitive)(value) , Heap(Non-primitive)(refrenece) 
+
+let myyoutube = "csgk"
+
+let anotherName = myyoutube
+console.log(anotherName); // csgk
+
+anotherName = "vscode"
+console.log(anotherName); // vscode 
+
+
+let user1 = {
+    emial : "user@gmail.com",
+    upi : "user@ybl"
+};
+
+
+let user2 = user1
+
+user2.emial = "kiran@gmail.com"
+
+console.log(user1.emial);
+console.log(user2.emial);
+
+
